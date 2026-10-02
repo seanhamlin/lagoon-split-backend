@@ -3,8 +3,15 @@ docker-compose-yaml: docker-compose.yml
 environments:
   main:
     network-policies:
-    - service: nginx
-      projects: 
-      # this allows only the production environment from frontend-test to access nginx
-      - name: frontend-test
-        environment-type: production
+      - service: nginx
+        projects:
+        # this allows only the production environment from zs-sean-frontend to access nginx
+        - name: zs-sean-frontend
+          environment-type: production
+  dev:
+    network-policies:
+      - service: nginx
+        projects:
+          # this allows only the development environment from zs-sean-frontend to access nginx
+          - name: zs-sean-frontend
+            environment-type: development

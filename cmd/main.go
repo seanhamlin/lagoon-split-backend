@@ -19,13 +19,13 @@ func main() {
 var lagoonProject, lagoonEnvironment string
 
 var page = `<html>
-<body bgcolor="#4c7ab0">
+<body style="background-color: #4c7ab0">
 <h1 style="color:#000000">Hello world Backend!</h1>
 </body>
 </html>`
 
 var cms = `<html>
-<body bgcolor="#56b54e">
+<body style="background-color: #56b54e">
 <h1 style="color:#000000">CMS</h1>
 <h1 style="color:#000000">Project: %s</h1>
 <h1 style="color:#000000">Environment: %s</h1>
@@ -33,7 +33,7 @@ var cms = `<html>
 </html>`
 
 var api = `<html>
-<body bgcolor="#fcba03">
+<body style="background-color: #fcba03">
 <h1 style="color:#000000">API</h1>
 <h1 style="color:#000000">Project: %s</h1>
 <h1 style="color:#000000">Environment: %s</h1>
