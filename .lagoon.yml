@@ -1,6 +1,6 @@
 docker-compose-yaml: docker-compose.yml
 
-project: drupalnext-base
+project: zs-sean-backend
 
 tasks:
   pre-rollout:

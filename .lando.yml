@@ -1,6 +1,0 @@
-name: drupalnext-base
-recipe: lagoon
-config:
-  flavor: drupal
-  build:
-    - composer install
